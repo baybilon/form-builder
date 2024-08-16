@@ -53,7 +53,7 @@
         </form>
       </div>
       <div v-else class="p-10">
-        <p>Here is your data: </p>
+        <p>Your personal information: </p>
         <pre>{{ formData }}</pre>
       </div>
     </div>
