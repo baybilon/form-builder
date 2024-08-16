@@ -62,24 +62,24 @@
 </template>
   
   <script>
-  import formConfig from '../data/response.json';
+  import formJson from '../data/response.json';
   
   export default {
     data() {
       return {
-        formConfig: formConfig,
+        formJson: formJson,
         currentStepIndex: 0,
         formData: {}
       };
     },
     computed: {
     currentStep() {
-      return this.formConfig[this.currentStepIndex];
+      return this.formJson[this.currentStepIndex];
     }
   },
   methods: {
     nextStep() {
-      if (this.currentStepIndex < this.formConfig.length - 1) {
+      if (this.currentStepIndex < this.formJson.length - 1) {
         this.currentStepIndex++;
       } else {
         this.currentStepIndex = null;
